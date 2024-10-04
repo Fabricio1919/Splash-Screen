@@ -1,0 +1,35 @@
+.logo-container {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.logo-container.loaded {
+  opacity: 1;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.logo {
+  animation: pulse 2s infinite alternate;
+  border-radius: 50%;
+  outline: solid #e1f5fe;
+}
+
+.style {
+  background-color: rgb(13, 230, 238);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
